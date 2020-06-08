@@ -2,7 +2,7 @@ from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 from rest_framework import generics
 
-#Using generic class-based views
+#Using generic class-based views in rest_framework generic
 
 class SnippetList(generics.ListCreateAPIView):
     queryset = Snippet.objects.all()
